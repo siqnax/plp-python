@@ -1,12 +1,12 @@
 def modify_file():
-    input_file = input("Enter the name of the file to read: ")
+    input_file = input("Please enter the file name to read: ")
     output_file = "modified_" + input_file
     
     try:
         with open(input_file, 'r') as infile:
             content = infile.read()
         
-        # Modify the content (example: convert text to uppercase)
+        # Modify: (convert text to uppercase)
         modified_content = content.upper()
         
         with open(output_file, 'w') as outfile:
@@ -20,5 +20,4 @@ def modify_file():
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
-# Run the function
 modify_file()
