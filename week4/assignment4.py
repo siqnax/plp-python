@@ -6,7 +6,7 @@ def modify_file():
         with open(input_file, 'r') as infile:
             content = infile.read()
         
-        # Modify: (convert text to uppercase)
+        # convert text to uppercase 
         modified_content = content.upper()
         
         with open(output_file, 'w') as outfile:
