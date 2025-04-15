@@ -1,3 +1,5 @@
+# QUESTION 1: 
+
 class Superhero:
     def __init__(self, name, alias, power_level):
         self.name = name
@@ -59,3 +61,11 @@ print(skybolt.boost_speed(100))
 print(titan.get_identity())
 print(titan.use_power())
 print(titan.train())
+
+
+
+
+
+
+
+# QUESTION 2
