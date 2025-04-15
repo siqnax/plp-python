@@ -69,3 +69,41 @@ print(titan.train())
 
 
 # QUESTION 2
+class Vehicle:
+    def __init__(self, name):
+        self.name = name
+
+    def move(self):
+        raise NotImplementedError("Subclasses must implement this method")
+
+
+# Subclasses with unique implementations of move()
+class Car(Vehicle):
+    def move(self):
+        return f"{self.name} is driving on the road."
+
+
+class Plane(Vehicle):
+    def move(self):
+        return f"{self.name} is flying in the sky."
+
+
+class Boat(Vehicle):
+    def move(self):
+        return f"{self.name} is sailing across the water."
+
+
+# polymorphism
+def travel(vehicle):
+    print(vehicle.move())
+
+
+# vehicle objects
+my_car = Car("Tesla")
+my_plane = Plane("Boeing 747")
+my_boat = Boat("Sea Breeze")
+
+# Using the same interface (move) for different vehicle types
+travel(my_car)
+travel(my_plane)
+travel(my_boat)
